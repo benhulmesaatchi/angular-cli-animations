@@ -1,8 +1,8 @@
 <div class="btn-container">
-  <a (click)="slideFromTop()">Slide From Top</a>
-  <a (click)="slideFromRight()">Slide From Right</a>
-  <a (click)="slideFromBottom()">Slide From Bottom</a>
-  <a (click)="slideFromLeft()">Slide From Left</a>
+  <a (click)="slideInAnimation(1)">Slide From Top</a>
+  <a (click)="slideInAnimation(2)">Slide From Right</a>
+  <a (click)="slideInAnimation(3)">Slide From Bottom</a>
+  <a (click)="slideInAnimation(4)">Slide From Left</a>
 </div>
 <div class="animation-container">
   <p [@slideFromTop]='slideFromTopState'class="slide-from-top" >
