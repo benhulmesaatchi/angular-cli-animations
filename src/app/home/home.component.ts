@@ -16,17 +16,15 @@ export class HomeComponent {
   slideFromLeftState: string = 'offScreen';
 
   constructor() { }
-  
-  slideFromTop() {
-    this.slideFromTopState = (this.slideFromTopState === 'offScreen' ? 'onScreen' : 'offScreen');
-  }
-  slideFromRight() {
-    this.slideFromRightState = (this.slideFromRightState === 'offScreen' ? 'onScreen' : 'offScreen');
-  }
-  slideFromBottom() {
-    this.slideFromBottomState = (this.slideFromBottomState === 'offScreen' ? 'onScreen' : 'offScreen');
-  }
-  slideFromLeft() {
-    this.slideFromLeftState = (this.slideFromLeftState === 'offScreen' ? 'onScreen' : 'offScreen');
+
+  slideInAnimation(origin: number) {
+    if(origin === 1)
+      this.slideFromTopState = (this.slideFromTopState === 'offScreen' ? 'onScreen' : 'offScreen');
+    if(origin === 2)
+      this.slideFromRightState = (this.slideFromRightState === 'offScreen' ? 'onScreen' : 'offScreen');
+    if(origin === 3)
+      this.slideFromBottomState = (this.slideFromBottomState === 'offScreen' ? 'onScreen' : 'offScreen');
+    if(origin === 4)
+      this.slideFromLeftState = (this.slideFromLeftState === 'offScreen' ? 'onScreen' : 'offScreen');
   }
 }
