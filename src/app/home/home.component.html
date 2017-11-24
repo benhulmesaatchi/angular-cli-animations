@@ -1,0 +1,20 @@
+<div class="btn-container">
+  <a (click)="slideFromTop()">Slide From Top</a>
+  <a (click)="slideFromRight()">Slide From Right</a>
+  <a (click)="slideFromBottom()">Slide From Bottom</a>
+  <a (click)="slideFromLeft()">Slide From Left</a>
+</div>
+<div class="animation-container">
+  <p [@slideFromTop]='slideFromTopState'class="slide-from-top" >
+    Slide From Top
+  </p>
+  <p [@slideFromRight]='slideFromRightState'class="slide-from-right" >
+    Slide From Right
+  </p>
+  <p [@slideFromBottom]='slideFromBottomState'class="slide-from-bottom" >
+    Slide From Bottom
+  </p>
+  <p [@slideFromLeft]='slideFromLeftState'class="slide-from-left" >
+    Slide From Left
+  </p>
+</div>
