@@ -8,9 +8,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
-// Bootstrap Modules
-import { AppBootstrapModule } from './app-bootstrap.module';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,8 +17,7 @@ import { AppBootstrapModule } from './app-bootstrap.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    AppBootstrapModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
